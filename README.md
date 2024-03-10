@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# 🔐 Cifra de César
+Olá! Bem-vindo ao meu projeto desenvolvido em React que oferece uma ferramenta para cifrar e decifrar mensagens usando a clássica cifra de César.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📃 Sobre
+A cifra de César é uma das mais simples e conhecidas técnicas de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra letra, fixa, que se encontra um número fixo de posições à frente no alfabeto.
 
-Currently, two official plugins are available:
+## 🔗 Link de demonstração
+<a href="https://movie-mu-sepia.vercel.app/">PóneiFlix</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tecnologias
 
-## Expanding the ESLint configuration
+![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5)
+![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=264CE4)
+![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
+![TypeScript](https://img.shields.io/badge/TypeScript-000?style=for-the-badge&logo=typescript)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🎨 Documentação de cores
 
-- Configure the top-level `parserOptions` property like this:
+| Cor               | Hexadecimal                                                |
+| ----------------- | ---------------------------------------------------------------- |
+| Cor exemplo       | ![#d90429](https://via.placeholder.com/10/d90429?text=+) #d90429 |
+| Cor exemplo       | ![#229EAF](https://via.placeholder.com/10/FFF9E7?text=+) #229EAF |
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 🚀 Como executar o projeto
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Frontend
+
+## Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+## 🧭 Rodando a aplicação web (Frontend)
+
+```bash
+
+# Clone este repositório
+$ git clone
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd cifra-cesar
+
+# Instale as dependências
+$ npm install
+
+# Rodando a aplicação
+$ npm run dev
