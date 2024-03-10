@@ -1,11 +1,17 @@
 # 🔐 Cifra de César
+
 Olá! Bem-vindo ao meu projeto desenvolvido em React que oferece uma ferramenta para cifrar e decifrar mensagens usando a clássica cifra de César.
 
 # 📃 Sobre
+
 A cifra de César é uma das mais simples e conhecidas técnicas de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra letra, fixa, que se encontra um número fixo de posições à frente no alfabeto.
 
+## 📸 Imagem do projeto
+
+![cifra]()
+
 ## 🔗 Link de demonstração
-<a href="https://movie-mu-sepia.vercel.app/">PóneiFlix</a>
+<a href="https://cifra-cesar-mariabernardes23s-projects.vercel.app/">Site Cifra de César</a>
 
 ## 🛠 Tecnologias
 
@@ -19,7 +25,7 @@ A cifra de César é uma das mais simples e conhecidas técnicas de criptografia
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
 | Cor exemplo       | ![#d90429](https://via.placeholder.com/10/d90429?text=+) #d90429 |
-| Cor exemplo       | ![#229EAF](https://via.placeholder.com/10/FFF9E7?text=+) #229EAF |
+| Cor exemplo       | ![#229EAF](https://via.placeholder.com/10/229EAF?text=+) #229EAF |
 
 ## 🚀 Como executar o projeto
 
@@ -36,7 +42,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone
+$ git clone https://github.com/mariabernardes23/cifra-cesar.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd cifra-cesar

@@ -64,7 +64,7 @@ main {
   }
 
   .buttons button {
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
   }
 }
 
@@ -78,6 +78,6 @@ main {
   }
 
   .buttons button {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
   }
 }
