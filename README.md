@@ -7,8 +7,7 @@ Olá! Bem-vindo ao meu projeto desenvolvido em React que oferece uma ferramenta 
 A cifra de César é uma das mais simples e conhecidas técnicas de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra letra, fixa, que se encontra um número fixo de posições à frente no alfabeto.
 
 ## 📸 Imagem do projeto
-
-![cifra]()
+![screencapture-cifra-cesar-mariabernardes23s-projects-vercel-app-2024-03-10-15_46_03](https://github.com/mariabernardes23/cifra-cesar/assets/99373514/337fde8c-7af2-4ae8-9a66-5977b3b74695)
 
 ## 🔗 Link de demonstração
 <a href="https://cifra-cesar-mariabernardes23s-projects.vercel.app/">Site Cifra de César</a>
