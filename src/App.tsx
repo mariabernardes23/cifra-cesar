@@ -6,57 +6,43 @@ function App() {
   const [mensagemCifrada, setMensagemCifrada] = useState("");
   const [bruteForceResult, setBruteForceResult] = useState<string[]>([]);
 
-  const cifrar = (mensagem: string, chave: number) => {
+  const cifrarOuDecifrar = (mensagem: string, chave: number, cifrar: boolean) => {
     return mensagem
       .split("")
       .map((char) => {
         let codigo = char.charCodeAt(0);
-        if (codigo >= 65 && codigo <= 90) {
-          return String.fromCharCode(((codigo - 65 + chave) % 26) + 65);
-        } else if (codigo >= 97 && codigo <= 122) {
-          return String.fromCharCode(((codigo - 97 + chave) % 26) + 97);
-        } else if (codigo >= 48 && codigo <= 57) {
-          return String.fromCharCode(((codigo - 48 + chave) % 10) + 48);
+        let base = codigo >= 65 && codigo <= 90 ? 65 : codigo >= 97 && codigo <= 122 ? 97 : codigo >= 48 && codigo <= 57 ? 48 : -1;
+        if (base !== -1) {
+          return String.fromCharCode(((codigo - base + (cifrar ? chave : 26 - chave)) % (base === 48 ? 10 : 26)) + base);
         } else {
-          switch (char) {
-            case ".":
-              return ".";
-            case ",":
-              return ",";
-            case "?":
-              return "?";
-            case "!":
-              return "!";
-            default:
-              return char;
-          }
+          return char;
         }
       })
       .join("");
   };
 
-  const decifrar = (mensagemCifrada: string, chave: number) => {
-    return cifrar(mensagemCifrada, 26 - (chave % 26));
-  };
-
   const bruteForce = (mensagemCifrada: string) => {
     const possibilidades = [];
     for (let i = 0; i < 26; i++) {
-      possibilidades.push(decifrar(mensagemCifrada, i));
+      possibilidades.push(cifrarOuDecifrar(mensagemCifrada, i, false));
     }
     setBruteForceResult(possibilidades);
   };
 
   const handleCifrar = () => {
-    setMensagemCifrada(cifrar(mensagemOriginal, chave % 26));
+    setMensagemCifrada(cifrarOuDecifrar(mensagemOriginal, chave % 26, true));
   };
 
   const handleDecifrar = () => {
-    setMensagemCifrada(decifrar(mensagemCifrada, chave));
+    setMensagemCifrada(cifrarOuDecifrar(mensagemOriginal, chave % 26, false));
   };
 
   const handleBruteForce = () => {
-    bruteForce(mensagemCifrada);
+    if (mensagemCifrada.trim() !== "") {
+      bruteForce(mensagemCifrada);
+    } else {
+      return;
+    }
   };
 
   const handleClean = () => {
