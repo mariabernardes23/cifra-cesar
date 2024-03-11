@@ -11,9 +11,18 @@ function App() {
       .split("")
       .map((char) => {
         let codigo = char.charCodeAt(0);
-        let base = codigo >= 65 && codigo <= 90 ? 65 : codigo >= 97 && codigo <= 122 ? 97 : codigo >= 48 && codigo <= 57 ? 48 : -1;
+        let base =
+          codigo >= 65 && codigo <= 90
+            ? 65
+            : codigo >= 97 && codigo <= 122
+            ? 97
+            : codigo >= 48 && codigo <= 57
+            ? 48
+            : -1;
+
         if (base !== -1) {
-          return String.fromCharCode(((codigo - base + (cifrar ? chave : 26 - chave)) % (base === 48 ? 10 : 26)) + base);
+          let range = base === 48 ? 10 : 26;
+          return String.fromCharCode(((codigo - base + (cifrar ? chave : range - chave)) % range) + base);
         } else {
           return char;
         }
